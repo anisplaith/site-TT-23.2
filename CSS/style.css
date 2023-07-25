@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181B24;
+    padding-bottom: 20px;
+}
+
+/* ------ HEADER ------ */
+
+header {
+    background-color: #14161D;
+    *border: solid 2px blue;
+    height: 95px;
+}
+
+.logo-TT {
+    display: inline-block;
+    vertical-align: middle; /* tira o espaçamento que embaixo da img*/
+    padding-left: 43px; 
+    position: relative;
+    top: calc(50% - 30px);  
+}
+
+header div {
+    display: inline-block;
+    *border: solid 2px red;
+    position: relative;
+    *left: calc(50% - (356px + 60px + 43px));
+    left: 5%;
+    top: calc(50% - 30px); // 30px pois é a metade da altura da logo, pois ela é mais alta que o input
+}
+
+header input {
+    width: 670px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #1E2026;
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 10px;
+}
+
+header div img {
+    width: 25px;
+    position: absolute;
+    left: 93%;
+    top: calc(50% - (12px));
+}
+
+/* ------ MENU LATERAL ------ */
+nav a {
+    *border: solid 2px red;
+    display: block;
+    
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+nav img {
+    width: 32px;
+}
+
+.container {
+    display: flex;
+    *border: solid 2px green;
+    gap: 30px;
+    padding: 47px 36px 0px 36px;
+}
+
+
+/* ------ CRIAR POST ------ */
+
+.criar-post{
+    width: 670px;
+    height: 142px;
+    border: solid 1px #484848;
+    border-radius: 10px;
+    background-color: #181B24;
+    display: inline-block;
+}
+
+.criar-post textarea {
+    width: 90%;
+    background-color: #181B24;
+    height: 59px;
+    margin-top: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 10px; 
+    resize: none;
+    position: relative;
+    left: calc(50% - 306.5px); /* 90% de 670 = 603 -> 603/2 = 301.5 | padding-left = 10px -> 10/2 = 5 :. 301.5+5 = 306.5px */
+   
+}
+
+textarea::placeholder {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+main section div {
+    *border: solid 2px blue;
+    padding: 0px 25px 0px 25px;
+    height: 40px;
+}
+
+main div button {
+    float: right; /* precisa de display tipo bloco */
+    width: 98px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #22A2F2;
+}
+
+main div button:hover {
+    background-color: white;
+    width: 99px;
+    cursor: pointer;
+
+
+}
+
+main section div img {
+    *border: solid 2px green;
+    position: relative;
+    top: calc(50% - 12px);
+}
+
+
+/* ------ POST ------ */
+
+main p {
+    display: inline;
+}
+
+.post {
+    width: 500px;
+    border: solid 1px #484848;
+    border-radius: 10px;
+    color: white;
+    padding: 47px 85px 47px 85px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.post-info {
+    *border: solid 2px red;
+    height: 35px;
+    padding: 10px 0px 10px 0px;
+}
+
+.icons-post{
+    float: right;
+    padding-left: 18px;
+    width: 32px;
+    cursor: pointer;
+}
+.img-perfil {
+    width: 35px;
+    vertical-align: middle;
+    border-radius: 50%; // forma um círculo
+}
+
+.img-post {
+    width: 500px;
+}
+
+.posts {
+    display: grid;
+    padding-top: 30px;
+    gap: 30px;
+
+}
+
+/* ------ SUGESTÃO DE PERFIS ------ */
+
+.sugestao-perfil {
+    width: 311px;
+    *border: solid 2px red;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.sugestao-perfil h2 {
+    font-size: 24px;
+}
+.sugestao-perfil p {
+    font-size: 18px;
+    display: inline;
+}
+
+.sugestao-perfil div {
+    *border: solid 2px blue;
+}
+.sugestao-perfil button {
+    float: right;
+    background-color: #222222;
+    border: none;
+    color: #22A2F2 ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sugestao-perfil button:hover {
+    background-color: white;
+    cursor: pointer;
+
+}
+
+/* ------ ALINHAMENTO ------ */
+
+main {
+    left: 7%;
+    position: relative;
+}
+
+.sugestao-perfil {
+    left: 7%;
+    position: relative;
+}
